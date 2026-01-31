@@ -1,0 +1,157 @@
+:root {
+  color-scheme: light;
+  font-family: "Inter", system-ui, sans-serif;
+  background-color: #f6f5fb;
+  color: #15131a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.app-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.app-subtitle {
+  margin: 0;
+  color: #5c566b;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  margin: 12px 0 12px;
+}
+
+.lead {
+  font-size: 1.05rem;
+  color: #4a4657;
+  margin: 0 0 24px;
+}
+
+.hero-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(20, 15, 30, 0.08);
+}
+
+.hero-card ul {
+  margin: 16px 0 0;
+  padding-left: 18px;
+  color: #3b3645;
+  display: grid;
+  gap: 8px;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #ece8f3;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+}
+
+.card p {
+  margin: 0;
+  color: #4a4657;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #ffffff 0%, #f0ecff 100%);
+  border: 1px solid #e3ddf8;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: #ebe6ff;
+  color: #3a287f;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.primary-button,
+.ghost-button {
+  font: inherit;
+  border-radius: 999px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.primary-button {
+  background: #5f3dc4;
+  color: white;
+  font-weight: 600;
+}
+
+.ghost-button {
+  background: transparent;
+  border: 1px solid #b7a7e5;
+  color: #463770;
+}
+
+@media (max-width: 700px) {
+  .cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
